@@ -46,7 +46,7 @@ export default class ShippingOptions extends Vue {}
 
 header {
   background-color: var(--fruugo-primary);
-  padding: 20px;
+  padding: 30px;
   display: flex;
   justify-content: space-between;
   gap: 25px;
@@ -66,7 +66,7 @@ header {
 }
 
 main {
-  padding: 20px;
+  padding: 30px;
 
   .shipping-option {
     h2 {
