@@ -13,10 +13,22 @@ const routes: Array<RouteConfig> = [
   {
     path: '/about',
     name: 'About',
-    // route level code-splitting
-    // this generates a separate chunk (about.[hash].js) for this route
-    // which is lazy-loaded when the route is visited.
     component: () => import(/* webpackChunkName: "about" */ '../views/About.vue')
+  },
+  {
+    path: '/checkout',
+    name: 'Checkout',
+    component: () => import(/* webpackChunkName: "checkout" */ '../views/Checkout.vue')
+  },
+  {
+    path: '/amo-loading',
+    name: 'AMOLoading',
+    component: () => import(/* webpackChunkName: "amoloading" */ '../views/AMOLoading.vue')
+  },
+  {
+    path: '/shipping',
+    name: 'ShippingOptions',
+    component: () => import(/* webpackChunkName: "shippingoptions" */ '../views/ShippingOptions.vue')
   }
 ]
 
