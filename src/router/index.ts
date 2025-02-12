@@ -7,29 +7,14 @@ Vue.use(VueRouter)
 const routes: Array<RouteConfig> = [
   {
     path: '/',
-    name: 'Home',
-    component: Home
+    name: 'Search',
+    component: () => import(/* webpackChunkName: "search" */ '../views/Search.vue')
   },
   {
-    path: '/about',
-    name: 'About',
-    component: () => import(/* webpackChunkName: "about" */ '../views/About.vue')
+    path: '/results',
+    name: 'Results',
+    component: () => import(/* webpackChunkName: "results" */ '../views/Results.vue')
   },
-  {
-    path: '/checkout',
-    name: 'Checkout',
-    component: () => import(/* webpackChunkName: "checkout" */ '../views/Checkout.vue')
-  },
-  {
-    path: '/amo-loading',
-    name: 'AMOLoading',
-    component: () => import(/* webpackChunkName: "amoloading" */ '../views/AMOLoading.vue')
-  },
-  {
-    path: '/shipping',
-    name: 'ShippingOptions',
-    component: () => import(/* webpackChunkName: "shippingoptions" */ '../views/ShippingOptions.vue')
-  }
 ]
 
 const router = new VueRouter({
