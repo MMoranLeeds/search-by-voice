@@ -468,11 +468,11 @@
             <div class="image">
               <a href="#">
                 <img
-                  :src="'https://picsum.photos/id/' + item + 2 + '/200/200'"
+                  :src="'https://picsum.photos/id/' + item * 2 + '/200/200'"
                   alt=""
                 />
                 <img
-                  :src="'https://picsum.photos/id/' + item + 4 + '/200/200'"
+                  :src="'https://picsum.photos/id/' + item * 4 + '/200/200'"
                   alt=""
                 />
               </a>
@@ -1859,7 +1859,7 @@ aside {
     font-weight: 700;
   }
 
-  + p{
+  + p {
     text-wrap: balance;
   }
 }
@@ -1932,6 +1932,7 @@ aside {
     display: grid;
     gap: 10px;
     grid-template-columns: repeat(auto-fit, minmax(275px, 1fr));
+
 
     li {
       padding: 15px;
