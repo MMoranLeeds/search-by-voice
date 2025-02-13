@@ -419,14 +419,6 @@
                 shopping_cart
               </span>
             </a>
-            <button
-              class="header-cta-button mobile-search"
-              v-tooltip="'Saved items'"
-              type="button"
-              v-on:click="toggleIsSearching(true)"
-            >
-              <span class="material-symbols-rounded notranslate"> search </span>
-            </button>
           </div>
         </div>
       </div>
